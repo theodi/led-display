@@ -33,6 +33,7 @@
               direction: $display.attr('data-direction') || 'right',
               duration: delay * 4
             })
+            .delay(delay)
             .toggle({
               effect: 'slide',
               direction: $display.attr('data-direction') === 'left' ? 'right' : 'left',
