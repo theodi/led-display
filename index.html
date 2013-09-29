@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>ODI Summit LED Display</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var
+      delay = 2000,
+      $first = $('div.display').eq(0),
+      animateNext = function($display) {
+        return function () {
+          var $next = $display.next();
+          if ($next.length > 0) {
+            animate($next);
+          } else {
+            animate($first);
+          }
+          $display.delay(delay * 2).hide('fade');
+        };
+      },
+      animate = function ($display) {
+        console.log($display);
+        var opts = {
+          effect: 'fade',
+          complete: animateNext($display),
+        };
+        if ($display.hasClass('scroll')) {
+          $display
+            .delay(delay)
+            .toggle({
+              effect: 'slide',
+              direction: $display.attr('data-direction') || 'right',
+              duration: delay * 4
+            })
+            .toggle({
+              effect: 'slide',
+              direction: $display.attr('data-direction') === 'left' ? 'right' : 'left',
+              duration: delay * 4,
+              complete: opts.complete
+            });
+        } else {
+          if ($display.hasClass('slide')) {
+            opts.effect = 'slide';
+            opts.direction = $display.attr('data-direction') || 'right',
+            opts.duration = delay;
+          } else if ($display.hasClass('blind')) {
+            opts.effect = 'blind';
+            opts.direction = $display.attr('data-direction') || 'right',
+            opts.duration = delay;
+          }
+          $display
+            .delay(delay)
+            .toggle(opts);
+        }
+      };
+
+    animate($first);
+  });
+</script>
+<style type="text/css">
+  body {
+  	width: 1200px;
+  	height: 40px;
+  	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  	font-size: 36px;
+  	background-color: black;
+  	color: white;
+  }
+  div.display {
+  	width: 1200px;
+  	height: 40px;
+    position: absolute;
+    display: none;
+  }
+  div.display.static div {
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+  }
+  div.display.scrolling div {
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    padding: 3px;
+  }
+  div.display div.left { text-align: left; }
+  div.display div.right { text-align: right; }
+  div.display div.center { text-align: center; }
+  div.display div.small { font-size: 12; }
+  div.display div.bottom { bottom: 0; }
+  div.display div.middle { vertical-align: middle; }
+  div.display div.top { top: 0; }
+  .darkblue { background-color: #2254F4; }
+	.mediumblue { background-color: #00B7FF; }
+	.lightblue { background-color: #08DEF9; }
+	.turquoise { background-color: #1DD3A7; }
+	.darkgreen { background-color: #0DBC37; }
+	.lightgreen { background-color: #67EF67; }
+	.yellow { background-color: #F9BC26; }
+	.orange { background-color: #FF6700; }
+	.red { background-color: #D60303; }
+	.pink { background-color: #EF3AAB; }
+	.magenta { background-color: #E6007C; }
+	.purple { background-color: #B13198; }
+  .black { background-color: black; }
+</style>
+</head>
+<body>
+<div class="display">
+	<img src="Summit-LEDellipse_dev01-08.png" />
+</div>
+<div class="display turquoise slide" data-direction="right">
+</div>
+<div class="display turquoise blind" data-direction="left">
+  <img src="Summit-LEDellipse_dev01-01.png" />
+</div>
+<div class="display black slide" data-direction="right">
+</div>
+<div class="display black scroll" data-direction="right">
+  <img src="Summit-LEDellipse_dev01-02.png" />
+</div>
+<div class="display black slide" data-direction="down">
+  <img src="Summit-LEDellipse_dev01-13.png" />
+</div>
+<div class="display black slide" data-direction="down">
+</div>
+<div class="display black scroll" data-direction="left">
+  <img src="Summit-LEDellipse_dev01-03.png" />
+</div>
+<div class="display black slide" data-direction="down">
+  <img src="Summit-LEDellipse_dev01-14.png" />
+</div>
+<div class="display black slide" data-direction="down">
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-04.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-05.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-06.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-07.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-09.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-10.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-11.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-12.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-15.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-16.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-17.png" />
+</div>
+</body>
+</html>
