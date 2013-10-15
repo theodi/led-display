@@ -8,6 +8,24 @@
     var
       delay = 5000,
       $first = $('div.display').eq(0),
+      animateNextText = function($text, textDuration, timeRemaining, $firstText) {
+        return function() {
+          var 
+            $next = $text.next(),
+            $display = $text.parents('.multiline');
+          if (!($display.hasClass('stopping'))) {
+            if (timeRemaining < textDuration) {
+              $display
+                .addClass('stopping');
+              animateNext($display)();
+            } else if ($next.length > 0) {
+              animateText($next, textDuration, timeRemaining, $firstText);
+            } else {
+              animateText($firstText, textDuration, timeRemaining, $firstText);
+            }
+          }
+        };
+      }
       animateNext = function($display) {
         return function () {
           var $next = $display.next();
@@ -19,15 +37,42 @@
           $display.delay(delay * 2).hide('fade');
         };
       },
+      animateText = function($text, textDuration, timeRemaining, $firstText) {
+        $text
+          .show({
+            effect: 'slide',
+            direction: 'right',
+            easing: 'linear',
+            duration: textDuration,
+            complete: animateNextText($text, textDuration, timeRemaining - textDuration, $firstText)
+          })
+          .hide({
+            effect: 'slide',
+            direction: 'left',
+            easing: 'linear',
+            duration: textDuration
+          });
+      },
       animate = function ($display) {
         console.log($display);
         var opts = {
           effect: 'fade',
           complete: animateNext($display),
         };
-        if ($display.hasClass('scroll')) {
+        if ($display.hasClass('multiline')) {
           $display
-            .delay(delay)
+            .removeClass('stopping')
+            .show('fade')
+            .find('.line')
+            .each(function() {
+              var 
+                $line = $(this),
+                $firstText = $line.find('.text').eq(0),
+                textDuration = parseInt($line.attr('data-duration'));
+              animateText($firstText, textDuration, delay * 4, $firstText);
+            });
+        } else if ($display.hasClass('scroll')) {
+          $display
             .toggle({
               effect: 'slide',
               direction: $display.attr('data-direction') || 'right',
@@ -39,7 +84,8 @@
               direction: $display.attr('data-direction') === 'left' ? 'right' : 'left',
               duration: delay * 4,
               complete: opts.complete
-            });
+            })
+            .delay(delay);
         } else {
           if ($display.hasClass('slide')) {
             opts.effect = 'slide';
@@ -51,14 +97,15 @@
             opts.duration = delay;
           }
           $display
-            .delay(delay)
-            .toggle(opts);
+            .toggle(opts)
+            .delay(delay);
         }
       };
 
     animate($first);
   });
 </script>
+<style type="text/css">
   body {
     margin-top: 100px;
     margin-left: 40px;
@@ -86,12 +133,29 @@
     display: inline-block;
     padding: 3px;
   }
+  div.display.multiline div.line {
+    font-size: 12px;
+    position: absolute;
+    width: 1200px;
+    height: 13px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  div.text {
+    position: absolute;
+    display: none;
+    width: 1200px;
+  }
   div.display div.left { text-align: left; }
   div.display div.right { text-align: right; }
   div.display div.center { text-align: center; }
   div.display div.small { font-size: 12; }
   div.display div.bottom { bottom: 0; }
   div.display div.middle { vertical-align: middle; }
+  div.display div.line.top { bottom: 26;}
+  div.display div.line.middle { bottom: 13;}
+  div.display div.line.bottom { bottom: 0;}
   div.display div.top { top: 0; }
   .darkblue { background-color: #2254F4; }
 	.mediumblue { background-color: #00B7FF; }
@@ -109,9 +173,24 @@
 </style>
 </head>
 <body>
-<div class="display">
+<div class="display multiline">
+  <div class="line top" data-duration="10000">
+    <div class="text">Data point number 1</div>
+    <div class="text">Data point number 4</div>
+    <div class="text">Data point number 5</div>
+  </div>
+  <div class="line middle" data-duration="24000">
+    <div class="text">Data point number 2</div>
+  </div>
+  <div class="line bottom" data-duration="19000">
+    <div class="text">Data point number 3</div>
+    <div class="text">Data point number 6</div>
+  </div>
+</div>
+<div class="display scroll" data-direction="right">
 	<img src="Summit-LEDellipse_dev01-08.png" />
 </div>
+<!--
 <div class="display turquoise slide" data-direction="right">
 </div>
 <div class="display turquoise blind" data-direction="left">
@@ -160,6 +239,12 @@
   <img src="Summit-LEDellipse_dev01-12.png" />
 </div>
 <div class="display">
+  <img src="Summit-LEDellipse_dev01-13.png" />
+</div>
+<div class="display">
+  <img src="Summit-LEDellipse_dev01-14.png" />
+</div>
+<div class="display">
   <img src="Summit-LEDellipse_dev01-15.png" />
 </div>
 <div class="display">
@@ -168,5 +253,6 @@
 <div class="display">
   <img src="Summit-LEDellipse_dev01-17.png" />
 </div>
+-->
 </body>
 </html>
