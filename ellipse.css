@@ -9,7 +9,6 @@ body {
 	color: white;
 }
 div.display {
-	height: 40px;
   position: absolute;
   display: none;
 }
