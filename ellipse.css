@@ -4,62 +4,59 @@ body {
 	width: 1200px;
 	height: 40px;
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 36px;
+	font-size: 34px;
 	background-color: black;
 	color: white;
 }
 div.display {
   position: absolute;
   display: none;
+  background: black;
 }
-div.display.coloured {
+div.coloured {
   background-image: url('multicolour-background.png');
-}
-div.display.static div {
+  background-repeat: no-repeat;
+  background-size: 1200px 40px;
+  color: black;
+  font-weight: bold;
   width: 1200px;
   height: 40px;
-  position: absolute;
 }
-div.display.scrolling div {
-  font-size: 12px;
-  position: relative;
-  display: inline-block;
-  padding: 3px;
-}
-div.display.multiline div.line {
-  font-size: 12px;
-  position: absolute;
+div.display.multiline {
   width: 1200px;
-  height: 13px;
-  display: block;
-  white-space: nowrap;
+  height: 40px;
   overflow: hidden;
+  background: transparent;
 }
-div.text {
-  position: absolute;
-  display: none;
-  width: 1200px;
+div.display.line {
+  font-size: 12px;
+  height: 13px;
+  white-space: nowrap;
+  background: transparent;
 }
-div.display div.left { text-align: left; }
-div.display div.right { text-align: right; }
-div.display div.center { text-align: center; }
-div.display.small { font-size: 12; }
-div.display .bottom { bottom: 0; }
-div.display .middle { vertical-align: middle; }
-div.display .line.top { bottom: 26;}
-div.display .line.middle { bottom: 13;}
-div.display .line.bottom { bottom: 0;}
-div.display div.top { top: 0; }
-.darkblue { background-color: #2254F4; }
-.mediumblue { background-color: #00B7FF; }
-.lightblue { background-color: #08DEF9; }
-.turquoise { background-color: #1DD3A7; }
-.darkgreen { background-color: #0DBC37; }
-.lightgreen { background-color: #67EF67; }
-.yellow { background-color: #F9BC26; }
-.orange { background-color: #FF6700; }
-.red { background-color: #D60303; }
-.pink { background-color: #EF3AAB; }
-.magenta { background-color: #E6007C; }
-.purple { background-color: #B13198; }
-.black { background-color: black; }
+marquee { width: 1200px; }
+span.fact {
+  margin: 0 50px;
+  background: transparent;
+}
+span.question {
+  width: 600px;
+  text-align: center;
+  display: inline-block;
+}
+.line.top { bottom: 26;}
+.line.middle { bottom: 13;}
+.line.bottom { bottom: 0;}
+.darkblue { color: #2254F4; }
+.mediumblue { color: #00B7FF; }
+.lightblue { color: #08DEF9; }
+.turquoise { color: #1DD3A7; }
+.darkgreen { color: #0DBC37; }
+.lightgreen { color: #67EF67; }
+.yellow { color: #F9BC26; }
+.orange { color: #FF6700; }
+.red { color: #D60303; }
+.pink { color: #EF3AAB; }
+.magenta { color: #E6007C; }
+.purple { color: #B13198; }
+.black { color: black; }
