@@ -12,6 +12,9 @@ div.display {
   position: absolute;
   display: none;
 }
+div.display.coloured {
+  background-image: url('multicolour-background.png');
+}
 div.display.static div {
   width: 1200px;
   height: 40px;

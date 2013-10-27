@@ -3,24 +3,24 @@ $(document).ready(function () {
     var 
       $this = $(this),
       $next = $this.next('.display').eq(0),
-      showAt = $this.attr('data-display-at') * 1000,
-      hideAt = $next.attr('data-display-at') * 1000,
-      effect = ($this.hasClass('up') || $this.hasClass('right')) ? 'slide' : 'fade',
+      showAt = $this.attr('data-display-at') * 100,
+      hideAt = $next.attr('data-display-at') * 100,
+      effect = ($this.hasClass('up') || $this.hasClass('right') || $this.hasClass('down')) ? 'slide' : 'fade',
+      nextEffect = ($next.hasClass('up') || $next.hasClass('right') || $next.hasClass('down')) ? 'slide' : 'fade',
       duration = ($this.attr('data-transition') || 0) * 1000,
       nextDuration = $next.attr('data-transition') * 1000,
-      direction = $this.hasClass('up') ? 'down' : 'right',
+      direction = $this.hasClass('up') ? 'down' : $this.hasClass('down') ? 'up' : 'right',
+      nextDirection = $next.hasClass('up') ? 'up' : $next.hasClass('down') ? 'down' : 'left',
       showOpts = {
         effect: effect,
         duration: duration,
         direction: direction
       },
       hideOpts = {
-        effect: effect,
+        effect: nextEffect,
         duration: nextDuration,
-        direction: direction === 'down' ? 'up' : 'left'
+        direction: nextDirection
       };
-    console.log(showOpts);
-    console.log(hideOpts);
     $this
       .delay(showAt)
       .show(showOpts);
