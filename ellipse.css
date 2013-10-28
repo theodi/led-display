@@ -1,26 +1,36 @@
 body {
-  margin-top: 100px;
-  margin-left: 40px;
-	width: 1200px;
-	height: 40px;
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 34px;
 	background-color: black;
 	color: white;
 }
+div.wrapper {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  width: 1200px;
+  height: 40px;
+}
 div.display {
   position: absolute;
   display: none;
   background: black;
+  bottom: 0;
+  width: 1200px;
+  text-align: center;
 }
-div.coloured {
+div.display.coloured {
   background-image: url('multicolour-background.png');
   background-repeat: no-repeat;
   background-size: 1200px 40px;
+  background-position: 0 0;
   color: black;
   font-weight: bold;
   width: 1200px;
   height: 40px;
+}
+div.coloured .line {
+  color: black;
 }
 div.display.multiline {
   width: 1200px;
@@ -28,20 +38,21 @@ div.display.multiline {
   overflow: hidden;
   background: transparent;
 }
-div.display.line {
+div.line {
   font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
   height: 13px;
   white-space: nowrap;
   background: transparent;
 }
-marquee { width: 1200px; }
 span.fact {
   margin: 0 50px;
+  text-align: center;
   background: transparent;
 }
 span.question {
-  width: 600px;
-  text-align: center;
+  width: 595px;
   display: inline-block;
 }
 .line.top { bottom: 26;}

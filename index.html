@@ -7,597 +7,342 @@
 <link rel="stylesheet" href="ellipse.css" type="text/css">
 </head>
 <body>
+<div class="wrapper">
 <!-- mountains: total = 10 mins = 150s each-->
-<div class="display up" data-transition="5" data-display-at="0"><img src="mountains-close-crop.png" /></div>
-<div class="display up" data-transition="5" data-display-at="150"><img src="mountains-clustered-x3.png" /></div>
-<div class="display up" data-transition="5" data-display-at="300"><img src="mountains-with-odi-logos.png" /></div>
-<div class="display up" data-transition="5" data-display-at="450"><img src="mountains-scattered.png" /></div>
+<div class="display up" data-transition="6" data-display-at="0"><img src="mountains-close-crop.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="150"><img src="mountains-clustered-x3.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="300"><img src="mountains-with-odi-logos.png" /></div>
+<div class="display left" data-transition="60" data-display-at="450"><img src="mountains-scattered.png" /></div>
 <!-- end = 10mins = 600 -->
 <!-- everyone: total = 5 mins = 100s each -->
-<div class="display right" data-transition="5" data-display-at="600"><img src="this-is-for-everyone-01.png" /></div>
-<div class="display right" data-transition="5" data-display-at="700"><img src="this-is-for-everyone-02.png" /></div>
-<div class="display right" data-transition="30" data-display-at="800"><img src="this-is-for-everyone-03.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="600"><img src="this-is-for-everyone-01.png" /></div>
 <!-- end = 15mins = 900 -->
-<!-- colours: total = 5 mins = 300s -->
-<div class="display" data-transition="5" data-display-at="900"><img src="multicolour-background.png" /></div>
-<!-- end = 1200 -->
-<!-- mountains: 5 mins = 60s each -->
-<div class="display down" data-transition="5" data-display-at="1200"><img src="mountains-close-crop.png" /></div>
-<div class="display down" data-transition="5" data-display-at="1260"><img src="mountains-clustered-x3.png" /></div>
-<div class="display down" data-transition="5" data-display-at="1320"><img src="mountains-scattered.png" /></div>
-<div class="display right" data-transition="5" data-display-at="1380"><img src="mountains-with-odi-logos.png" /></div>
-<div class="display right" data-transition="5" data-display-at="1440"><img src="odi-logos-blk-ground-02.png" /></div>
+<!-- colours: total = 10 mins = 600s -->
+<div class="display up" data-transition="3" data-display-at="900"><img src="multicolour-background.png" /></div>
 <!-- end = 1500 -->
+<!-- mountains: 5 mins = 60s each -->
+<div class="display up" data-transition="6" data-display-at="1500"><img src="mountains-close-crop.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="1560"><img src="mountains-clustered-x3.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="1620"><img src="mountains-scattered.png" /></div>
+<div class="display left" data-transition="3" data-display-at="1680"><img src="mountains-with-odi-logos.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="1740"><img src="odi-logos-blk-ground-02.png" /></div>
+<!-- end = 1800 -->
 <!-- facts: 15 mins = 300s groups -->
-<div class="display right" data-transition="30" data-display-at="1500">
-  <span class="question yellow">Who loves this data?</span>
-  <span class="question purple">Who loves this data?</span>
+<div class="display right" data-transition="60" data-display-at="1800">
+  <span class="question yellow">How is this data collected?</span>
+  <span class="question yellow">How is this data collected?</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="1530">
-  <div class="display right line top" data-transition="60" data-display-at="1500">
-    <span class="fact mediumblue">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact darkgreen">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact darkblue">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact orange">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact lightblue">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact lightgreen">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+<div class="display left" data-transition="60" data-display-at="1860">
+<div class="line top">
+  <span class='fact mediumblue'>There were 295 retail enterprises in South Ribble in 2012</span>  <span class='fact purple'>The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
+</div>
+<div class="line middle">
+  <span class='fact lightblue'>In 2010, the UK imported about 7.144 billion kWh of electricity</span> <span class='fact magenta'>There are 37 airports in Taiwan</span>
+</div>
+<div class="line bottom">
+  <span class='fact mediumblue'>In 2012, the UK's GDP was about $2.441 trillion</span>  <span class='fact lightgreen'>&pound;42m was spent on chemicals R&amp;D in Wales in 2011</span>
+</div>
+</div>
+<div class="display right" data-transition="60" data-display-at="1920">
+  <span class="question orange">Who processes this data?</span>
+  <span class="question orange">Who processes this data?</span>
+</div>
+<div class="display left" data-transition="60" data-display-at="1980">
+  <div class="line top">
+    <span class='fact lightgreen'>In 2008, 32.7% of UaE's adult population were obese</span>  <span class='fact pink'>Taiwan imported 0 kWh of electricity in 2011</span>
   </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1500">
-    <span class="fact turquoise">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact magenta">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact red">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact pink">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact yellow">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact purple">90% of all data was generated in the last 2 years</span>
+  <div class="line middle">
+    <span class='fact darkblue'>There were 51.444 million internet users in the UK in 2009</span> <span class='fact darkblue'>There were 441 fish farms in the UK in 2007</span>
   </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1500">
-    <span class="fact mediumblue">There was £65,918m in circulation in August 2013</span>
-    <span class="fact darkgreen">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact darkblue">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact orange">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact lightblue">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact lightgreen">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact turquoise">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact magenta">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  <div class="line bottom">
+    <span class='fact yellow'>In 2012, 6.499m tonnes of sand were sold for building</span>  <span class='fact darkgreen'>The UK had about 12.26 births per 1,000 people in 2013</span>
   </div>
 </div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="1590">
-  <span class="question red">Where is this data about?</span>
-  <span class="question pink">Where is this data about?</span>
-</div>
-<div class="display right multiline" data-transition="30" data-display-at="1620">
-  <div class="display right line top" data-transition="60" data-display-at="1590">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1590">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1590">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
-</div>
-<div class="display right" data-transition="30" data-display-at="1680">
-  <span class="question">How is this data collected?</span>
-  <span class="question">How is this data collected?</span>
-</div>
-<div class="display right multiline" data-transition="30" data-display-at="1710">
-  <div class="display right line top" data-transition="60" data-display-at="1680">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1680">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1680">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
-</div>
-<div class="display right" data-transition="30" data-display-at="1770">
-  <span class="question">Who collects this data?</span>
-  <span class="question">Who collects this data?</span>
-</div>
-<div class="display right" data-transition="30" data-display-at="1800">
+<div class="display up" data-transition="3" data-display-at="2040">
   <img src="odi-logos-blk-ground-03.png" />
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="1830">
-  <div class="display right line top" data-transition="60" data-display-at="1800">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+<div class="display right" data-transition="60" data-display-at="2100">
+  <span class="question red">How could this data improve services?</span>
+  <span class="question red">How could this data improve services?</span>
+</div>
+<div class="display left" data-transition="60" data-display-at="2160">
+  <div class="line top">
+    <span class='fact darkgreen'>There were 6.272 million internet hosts in Taiwan in 2012</span> <span class='fact purple'>Indonesia made about $187 billion of exports in 2012</span>
   </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1800">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
+  <div class="line middle">
+    <span class='fact orange'>There are about 8.39 deaths per 1,000 population in the US in 2013</span> <span class='fact pink'>133 million bricks were produced in June 2013</span>
   </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1800">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  <div class="line bottom">
+    <span class='fact magenta'>There were 415,600 km of paved roads in Canada in 2008</span>  <span class='fact mediumblue'>There were 8.107 million internet hosts in the UK in 2012</span>
   </div>
 </div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="1890">
-  <span class="question">What is this data compared with?</span>
-  <span class="question">What is this data compared with?</span>
+<div class="display right" data-transition="60" data-display-at="2220">
+  <span class="question darkgreen">How could this data inform research?</span>
+  <span class="question darkgreen">How could this data inform research?</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="1920">
-  <div class="display right line top" data-transition="60" data-display-at="1890">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1890">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1890">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
+<div class="display left" data-transition="60" data-display-at="2280">
+<div class="line top">
+  <span class='fact darkblue'>90% of all data was generated in the last 2 years.</span> <span class='fact purple'>The Royal Botanic Gardens at Kew have 729 employees on payroll</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="1980">
-  <span class="question">Why is this data published?</span>
-  <span class="question">Why is this data published?</span>
+<div class="line middle">
+  <span class='fact darkgreen'>There were 27.387 million mobile phones in Canada in 2011</span> <span class='fact purple'>In the US, 19.5% of GDP was from government consumption</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="2010">
-  <div class="display right line top" data-transition="60" data-display-at="1980">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="1980">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="1980">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
+<div class="line bottom">
+  <span class='fact lightgreen'>63,000 engineers were employed doing R&amp;D in the UK in 2006</span> <span class='fact orange'>There are 28,603 km of gas pipelines in the UK in 2013</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="2070">
-  <span class="question">Why is this data used?</span>
-  <span class="question">Why is this data used?</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="2100">
+<div class="display up" data-transition="3" data-display-at="2340">
   <img src="odi-logos-blk-ground-04.png" />
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="2130">
-  <div class="display right line top" data-transition="60" data-display-at="2100">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+<div class="display right" data-transition="60" data-display-at="2400">
+  <span class="question lightgreen">Who publishes this data?</span>
+  <span class="question lightgreen">Who publishes this data?</span>
+</div>
+<div class="display left" data-transition="60" data-display-at="2460">
+  <div class="line top">
+    <span class='fact mediumblue'>North Devon has a local concentration of 28,533.3 in 2010</span>  <span class='fact yellow'>There have been 10 white Christmases in London since 1900</span>
   </div>
-  <div class="display right line middle" data-transition="65" data-display-at="2100">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
+  <div class="line middle">
+    <span class='fact purple'>&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>  <span class='fact darkblue'>The inflation rate in Russia was 5.1% in 2012</span>
   </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="2100">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  <div class="line bottom">
+    <span class='fact pink'>There were 81.612 million mobile phone subscribers in the UK in 2012</span> <span class='fact purple'>The subject of the Art of Fugue contains 14 pitches</span>
   </div>
 </div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="2190">
-  <span class="question">Where is this data used?</span>
-  <span class="question">Where is this data used?</span>
+<div class="display right" data-transition="60" data-display-at="2520">
+  <span class="question mediumblue">Why is this data collected?</span>
+  <span class="question mediumblue">Why is this data collected?</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="2220">
-  <div class="display right line top" data-transition="60" data-display-at="2190">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="2190">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="2190">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
+<div class="display left" data-transition="60" data-display-at="2580">
+<div class="line top">
+  <span class='fact darkgreen'>&pound;268m was spent on Shipbuilding R&amp;D in the UK in 2011</span> <span class='fact mediumblue'>There were 220 deaths per 100,000 live births in Indonesia in 2010</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="2280">
-  <span class="question">Who hates this data?</span>
-  <span class="question">Who hates this data?</span>
+<div class="line middle">
+  <span class='fact darkgreen'>The UK had about 9.33 deaths per 1,000 population in 2013</span> <span class='fact lightblue'>There were 499,331 deaths registered in England and Wales in 2012</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="2310">
-  <div class="display right line top" data-transition="60" data-display-at="2280">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="2280">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="2280">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
+<div class="line bottom">
+  <span class='fact darkblue'>Abercrombie House consumed 0.535m3 of water between 3am and 4am on 19th October 2013</span> <span class='fact pink'>About 16.29% of US land is arable land</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="2370">
-  <span class="question">Why do people love this data?</span>
-  <span class="question">Why do people love this data?</span>
 </div>
-<!-- end = 2400 -->
+<div class="display up" data-transition="3" data-display-at="2640">
+  <img src="odi-logos-blk-ground-04.png" />
+</div>
+<!-- end = 2700 -->
 <!-- nodes: 15 mins = 100s each -->
-<div class="display right" data-transition="30" data-display-at="2400"><img src="node-chicago.png" /></div>
-<div class="display right" data-transition="30" data-display-at="2500"><img src="node-brighton.png" /></div>
-<div class="display right" data-transition="30" data-display-at="2600"><img src="node-dubai.png" /></div>
-<div class="display right" data-transition="30" data-display-at="2700"><img src="node-leeds.png" /></div>
-<div class="display right" data-transition="30" data-display-at="2800"><img src="odi-logos-blue-on-green.png" /></div>
-<div class="display right" data-transition="30" data-display-at="2900"><img src="node-paris.png" /></div>
-<div class="display right" data-transition="30" data-display-at="3000"><img src="node-canada.png" /></div>
-<div class="display right" data-transition="30" data-display-at="3100"><img src="node-trento.png" /></div>
-<div class="display right" data-transition="30" data-display-at="3200"><img src="odi-logos-blk-ground-04.png" /></div>
-<!-- end = 3300 -->
+<div class="display left" data-transition="30" data-display-at="2700"><img src="node-chicago.png" /></div>
+<div class="display up" data-transition="3" data-display-at="2800"><img src="node-brighton.png" /></div>
+<div class="display up" data-transition="3" data-display-at="2900"><img src="node-dubai.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3000"><img src="node-leeds.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3100"><img src="odi-logos-blue-on-green.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3200"><img src="node-paris.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3300"><img src="node-canada.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3400"><img src="node-trento.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3500"><img src="odi-logos-blk-ground-04.png" /></div>
+<!-- end = 3600 -->
 <!-- mountains: 10 mins = 150s each -->
-<div class="display" data-transition="5" data-display-at="3300"><img src="mountains-clustered-x3.png" /></div>
-<div class="display down" data-transition="5" data-display-at="3450"><img src="mountains-scattered.png" /></div>
-<div class="display down" data-transition="5" data-display-at="3600"><img src="mountains-with-odi-logos.png" /></div>
-<div class="display down" data-transition="5" data-display-at="3750"><img src="mountains-close-crop.png" /></div>
-<!-- end = 3900 -->
-<!-- colours: 5 mins -->
-<div class="display" data-transition="5" data-display-at="3750"><img src="multicolour-background.png" /></div>
+<div class="display up" data-transition="3" data-display-at="3600"><img src="mountains-clustered-x3.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="3750"><img src="mountains-scattered.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="3900"><img src="mountains-with-odi-logos.png" /></div>
+<div class="display downup" data-transition="6" data-display-at="4050"><img src="mountains-close-crop.png" /></div>
 <!-- end = 4200 -->
+<!-- colours: 5 mins -->
+<div class="display left" data-transition="30" data-display-at="4200"><img src="multicolour-background.png" /></div>
+<!-- end = 4500 -->
 <!-- facts: 15 mins = 900s groups -->
-<div class="display right coloured" data-transition="5" data-display-at="4200">
-  <marquee>DATA QUESTION?</marquee>
+<div class="display right coloured" data-transition="60" data-display-at="4500">
+  <span class="question pink">Who collects this data?</span>
+  <span class="question pink">Who collects this data?</span>
 </div>
-<!-- end = 5100 -->
-<!-- mountains: 5 mins = 100s each -->
-<div class="display down" data-transition="5" data-display-at="5100"><img src="mountains-close-crop.png" /></div>
-<div class="display down" data-transition="5" data-display-at="5200"><img src="mountains-clustered-x3.png" /></div>
-<div class="display down" data-transition="5" data-display-at="5300"><img src="mountains-scattered.png" /></div>
+<div class="display left coloured" data-transition="60" data-display-at="4560">
+<div class="line top">
+  <span class='fact magenta'>In 2012, the UK had a labour force of about 32.07 million people</span>  <span class='fact red'>About 7.3% of the workforce was unemployed in Canada in 2012</span>
+</div>
+<div class="line middle">
+  <span class='fact darkgreen'>In the US, the gross national savings was 10.1% of GDP in 2012</span>  <span class='fact mediumblue'>Canada imported about 18.79 billion kWh of electricity in 2010</span>
+</div>
+<div class="line bottom">
+  <span class='fact lightblue'>Russia had about 44.152 million telephone lines in 2011</span> <span class='fact lightgreen'>There were 0.6 hospital beds per 1,000 population in Indonesia in 2010</span>
+</div>
+</div>
+<div class="display right coloured" data-transition="60" data-display-at="4620">
+  <span class="question purple">Where is this data used for?</span>
+  <span class="question purple">Where is this data used for?</span>
+</div>
+<div class="display left coloured" data-transition="60" data-display-at="4680">
+  <div class="line top">
+    <span class='fact lightblue'>The BIG Lottery Fund granted &pound;1 to The Men's Forum in April 2011</span>  <span class='fact pink'>Russia produced about 10.37 million bbl of oil per day in 2012</span>
+  </div>
+  <div class="line middle">
+    <span class='fact purple'>In 2013, there are about 15.65 births per 1,000 population in UaE</span>  <span class='fact orange'>73.8% of Russia's population lived in cities and towns in 2011</span>
+  </div>
+  <div class="line bottom">
+    <span class='fact darkgreen'>The Office of Rail Regulation employed 283 people in August 2013</span>  <span class='fact darkgreen'>In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  </div>
+</div>
+<div class="display right" data-transition="3" data-display-at="4740">
+  <img src="multicolour-background.png" />
+</div>
+<div class="display right coloured" data-transition="60" data-display-at="4800">
+  <span class="question magenta">Where is this data used?</span>
+  <span class="question magenta">Where is this data used?</span>
+</div>
+<div class="display left coloured" data-transition="60" data-display-at="4860">
+  <div class="line top">
+    <span class='fact mediumblue'>66.77% of employees at the Criminal Prosecution Service are women</span>  <span class='fact orange'>There were 40,997 emergency phones at railway stations in 2010</span>
+  </div>
+  <div class="line middle">
+    <span class='fact yellow'>There are about 6.31 deaths per 1,000 population in Indonesia in 2013</span>  <span class='fact lightblue'>Expats accounted for about 85% of the UaE work force in 2012</span>
+  </div>
+  <div class="line bottom">
+    <span class='fact red'>There have been 1944 crimes with code 49 in Northumbria this year</span> <span class='fact red'>In Kent, 25.8% of the county has 3G connectivity from 3 operators</span>
+  </div>
+</div>
+<div class="display right coloured" data-transition="60" data-display-at="4920">
+  <span class="question lightgreen">When will this data stop being available?</span>
+  <span class="question lightgreen">When will this data stop being available?</span>
+</div>
+<div class="display left coloured" data-transition="60" data-display-at="4980">
+<div class="line top">
+  <span class='fact orange'>There are about 33,417,073 women between 25 and 54 in Russia in 2013</span> <span class='fact lightgreen'>There are about 2.06 children born per woman in the US in 2013</span>
+</div>
+<div class="line middle">
+  <span class='fact darkgreen'>There are about 3.64 migrants per 1,000 population in the US in 2013</span>  <span class='fact lightblue'>Superfast broadband is available to 72.9% of Buckinghamshire County</span>
+</div>
+<div class="line bottom">
+  <span class='fact lightgreen'>Hampshire Customer Services answered 21237 calls about School Admissions in 2012</span> <span class='fact lightgreen'>The total reserves of the UK was $88,596,004,564 in 2012</span>
+</div>
+</div>
+<div class="display right" data-transition="3" data-display-at="5040">
+  <img src="multicolour-background.png" />
+</div>
+<div class="display right coloured" data-transition="60" data-display-at="5100">
+  <span class="question orange">Who uses this data?</span>
+  <span class="question orange">Who uses this data?</span>
+</div>
+<div class="display left coloured" data-transition="60" data-display-at="5160">
+  <div class="line top">
+    <span class='fact lightgreen'>Hampshire Customer Services answered 21237 calls about School Admissions in 2012</span> <span class='fact lightgreen'>The total reserves of the UK was $88,596,004,564 in 2012</span>
+  </div>
+  <div class="line middle">
+    <span class='fact orange'>There were 33.23 million telephone lines in use in the UK in 2011</span>  <span class='fact purple'>In the US, 24.2% of the workforce was doing sales and office work in 2009</span>
+  </div>
+  <div class="line bottom">
+    <span class='fact red'>The UK had about 2.765 physicians per 1,000 population in 2011</span>  <span class='fact magenta'>&pound;17m was spent by the UK Government on pharmaceuticals R&amp;D in the UK in 2011</span>
+  </div>
+</div>
+<div class="display right coloured" data-transition="60" data-display-at="5220">
+  <span class="question yellow">What is this data compared with?</span>
+  <span class="question yellow">What is this data compared with?</span>
+</div>
+<div class="display left coloured" data-transition="60" data-display-at="5280">
+<div class="line top">
+  <span class='fact mediumblue'>There are 241 km of oil piplines in Taiwan</span> <span class='fact lightblue'>Yorkshire Dales National Park Authority paid Royal Mail &pound;45.79 for postage on 30th September 2013</span>
+</div>
+<div class="line middle">
+  <span class='fact pink'>&pound;1m was spent on defence-related R&amp;D on rubber &amp; plastic products in the UK in 2011</span>  <span class='fact mediumblue'>There were 26.96 million internet users in Canada in 2009</span>
+</div>
+<div class="line bottom">
+  <span class='fact lightgreen'>There were about 4.309 doctors per 1,000 population in Russia in 2006</span>  <span class='fact orange'>There were about 3 hospital beds per 1,000 population in the US in 2010</span>
+</div>
+</div>
+<div class="display right" data-transition="3" data-display-at="5340">
+  <img src="multicolour-background.png" />
+</div>
 <!-- end = 5400 -->
+<!-- mountains: 5 mins = 100s each -->
+<div class="display up" data-transition="3" data-display-at="5400"><img src="mountains-close-crop.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="5500"><img src="mountains-clustered-x3.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="5600"><img src="mountains-scattered.png" /></div>
+<!-- end = 5700 -->
 <!-- nodes: 15 mins = 100s each -->
-<div class="display right" data-transition="30" data-display-at="5400"><img src="node-argentina.png" /></div>
-<div class="display right" data-transition="30" data-display-at="5500"><img src="node-moscow.png" /></div>
-<div class="display right" data-transition="30" data-display-at="5600"><img src="node-manchester.png" /></div>
-<div class="display right" data-transition="30" data-display-at="5700"><img src="odi-logos-green-on-blue.png" /></div>
-<div class="display right" data-transition="30" data-display-at="5800"><img src="node-gothenburg.png" /></div>
-<div class="display right" data-transition="30" data-display-at="5900"><img src="node-gold-coast.png" /></div>
-<div class="display right" data-transition="30" data-display-at="6000"><img src="node-north-carolina.png" /></div>
-<div class="display right" data-transition="30" data-display-at="6100"><img src="node-usa.png" /></div>
-<div class="display right" data-transition="30" data-display-at="6200"><img src="odi-logos-blk-ground-03.png" /></div>
-<!-- end = 6300 -->
-<!-- mountains: 5 mins = 300s each -->
-<div class="display right" data-transition="30" data-display-at="6300"><img src="mountains-with-odi-logos.png" /></div>
+<div class="display downup" data-transition="3" data-display-at="5700"><img src="node-argentina.png" /></div>
+<div class="display up" data-transition="3" data-display-at="5800"><img src="node-moscow.png" /></div>
+<div class="display up" data-transition="3" data-display-at="5900"><img src="node-manchester.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6000"><img src="odi-logos-green-on-blue.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6100"><img src="node-gothenburg.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6200"><img src="node-gold-coast.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6300"><img src="node-north-carolina.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6400"><img src="node-usa.png" /></div>
+<div class="display up" data-transition="3" data-display-at="6500"><img src="odi-logos-blk-ground-03.png" /></div>
 <!-- end = 6600 -->
+<!-- mountains: 5 mins = 300s each -->
+<div class="display up" data-transition="30" data-display-at="6600"><img src="mountains-with-odi-logos.png" /></div>
+<!-- end = 6900 -->
 <!-- facts: 10 mins = 200s groups -->
-<div class="display right" data-transition="30" data-display-at="6600">
-  <span class="question yellow">Who loves this data?</span>
-  <span class="question purple">Who loves this data?</span>
+<div class="display right" data-transition="60" data-display-at="6900">
+  <span class="question orange">What tools could you build with this data?</span>
+  <span class="question orange">What tools could you build with this data?</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="6630">
-  <div class="display right line top" data-transition="60" data-display-at="6600">
-    <span class="fact mediumblue">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact darkgreen">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact darkblue">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact orange">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact lightblue">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact lightgreen">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+<div class="display left" data-transition="60" data-display-at="6960">
+<div class="line top">
+  <span class='fact magenta'>UaE's population is growing by 2.87% per year</span> <span class='fact darkblue'>On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+</div>
+<div class="line middle">
+  <span class='fact darkgreen'>The US imported about 97.86 billion cubic metres of natural gas in 2011</span> <span class='fact purple'>There are 26 heliports in Canada</span>
+</div>
+<div class="line bottom">
+  <span class='fact mediumblue'>There were 295 retail enterprises in South Ribble in 2012</span>  <span class='fact purple'>The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
+</div>
+</div>
+<div class="display right" data-transition="60" data-display-at="7020">
+  <span class="question red">How could you contribute to this data?</span>
+  <span class="question red">How could you contribute to this data?</span>
+</div>
+<div class="display left" data-transition="60" data-display-at="7080">
+  <div class="line top">
+    <span class='fact lightblue'>In 2010, the UK imported about 7.144 billion kWh of electricity</span> <span class='fact magenta'>There are 37 airports in Taiwan</span>
   </div>
-  <div class="display right line middle" data-transition="65" data-display-at="6600">
-    <span class="fact turquoise">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact magenta">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact red">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact pink">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact yellow">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact purple">90% of all data was generated in the last 2 years</span>
+  <div class="line middle">
+    <span class='fact mediumblue'>In 2012, the UK's GDP was about $2.441 trillion</span>  <span class='fact lightgreen'>&pound;42m was spent on chemicals R&amp;D in Wales in 2011</span>
   </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="6600">
-    <span class="fact mediumblue">There was £65,918m in circulation in August 2013</span>
-    <span class="fact darkgreen">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact darkblue">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact orange">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact lightblue">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact lightgreen">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact turquoise">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact magenta">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  <div class="line bottom">
+    <span class='fact lightgreen'>In 2008, 32.7% of UaE's adult population were obese</span>  <span class='fact pink'>Taiwan imported 0 kWh of electricity in 2011</span>
   </div>
 </div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="6690">
-  <span class="question red">Where is this data about?</span>
-  <span class="question pink">Where is this data about?</span>
+<div class="display up" data-transition="3" data-display-at="7140">
+  <img src="odi-logos-blk-ground-03.png" />
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="6720">
-  <div class="display right line top" data-transition="60" data-display-at="6690">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
+<div class="display right" data-transition="60" data-display-at="7200">
+  <span class="question darkblue">What other data does this connect with?</span>
+  <span class="question darkblue">What other data does this connect with?</span>
+</div>
+<div class="display left" data-transition="60" data-display-at="7260">
+  <div class="line top">
+    <span class='fact darkblue'>There were 51.444 million internet users in the UK in 2009</span> <span class='fact darkblue'>There were 441 fish farms in the UK in 2007</span>
   </div>
-  <div class="display right line middle" data-transition="65" data-display-at="6690">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
+  <div class="line middle">
+    <span class='fact yellow'>In 2012, 6.499m tonnes of sand were sold for building</span>  <span class='fact darkgreen'>The UK had about 12.26 births per 1,000 people in 2013</span>
   </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="6690">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
+  <div class="line bottom">
+    <span class='fact darkgreen'>There were 6.272 million internet hosts in Taiwan in 2012</span> <span class='fact purple'>Indonesia made about $187 billion of exports in 2012</span>
   </div>
 </div>
-<div class="display right" data-transition="30" data-display-at="6780">
-  <span class="question">How is this data collected?</span>
-  <span class="question">How is this data collected?</span>
+<div class="display right" data-transition="60" data-display-at="7320">
+  <span class="question lightblue">How is this data anonymised?</span>
+  <span class="question lightblue">How is this data anonymised?</span>
 </div>
-<div class="display right" data-transition="30" data-display-at="6810">
-  <img src="odi-logos-blk-ground-05.png" />
+<div class="display left" data-transition="60" data-display-at="7380">
+<div class="line top">
+  <span class='fact orange'>There are about 8.39 deaths per 1,000 population in the US in 2013</span> <span class='fact pink'>133 million bricks were produced in June 2013</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="6840">
-  <div class="display right line top" data-transition="60" data-display-at="6810">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="6810">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="6810">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
+<div class="line middle">
+  <span class='fact magenta'>There were 415,600 km of paved roads in Canada in 2008</span>  <span class='fact mediumblue'>There were 8.107 million internet hosts in the UK in 2012</span>
 </div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="6900">
-  <span class="question">What is this data compared with?</span>
-  <span class="question">What is this data compared with?</span>
+<div class="line bottom">
+  <span class='fact darkblue'>90% of all data was generated in the last 2 years.</span> <span class='fact purple'>The Royal Botanic Gardens at Kew have 729 employees on payroll</span>
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="6930">
-  <div class="display right line top" data-transition="60" data-display-at="6900">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="6900">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="6900">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
 </div>
-<div class="display right" data-transition="30" data-display-at="6990">
-  <img src="odi-logos-blk-ground-06.png" />
+<div class="display up" data-transition="3" data-display-at="7440">
+  <img src="odi-logos-blk-ground-04.png" />
 </div>
-<div class="display right multiline" data-transition="30" data-display-at="7020">
-  <div class="display right line top" data-transition="60" data-display-at="6990">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="6990">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="6990">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
-</div>
-<!--</div>-->
-<div class="display right" data-transition="30" data-display-at="7080">
-  <span class="question">Where is this data used?</span>
-  <span class="question">Where is this data used?</span>
-</div>
-<div class="display right multiline" data-transition="30" data-display-at="7110">
-  <div class="display right line top" data-transition="60" data-display-at="7080">
-    <span class="fact">North Devon has a local concentration of 28,533.3 in 2010</span>
-    <span class="fact">There were 499,331 deaths registered in England and Wales in 2012</span>
-    <span class="fact">&pound;3.623bn of R&amp;D investment for UK businesses came from overseas in 2011</span>
-    <span class="fact">The total reserves of the UK was $88,596,004,564 in 2012</span>
-    <span class="fact">There were 295 retail enterprises in South Ribble in 2012</span>
-    <span class="fact">On average there were 20.5 children per class in secondary schools in the East Midlands in 2009/2010</span>
-  </div>
-  <div class="display right line middle" data-transition="65" data-display-at="7080">
-    <span class="fact">The subject of the Art of Fugue contains 14 pitches</span>
-    <span class="fact">The Office of Rail Regulation employed 283 people in August 2013</span>
-    <span class="fact">There were 40,997 emergency phones at railway stations in 2010</span>
-    <span class="fact">In 2012, 6.499m tonnes of sand were sold for building</span>
-    <span class="fact">There have been 10 white Christmases in London since 1900</span>
-    <span class="fact">90% of all data was generated in the last 2 years</span>
-  </div>
-  <div class="display right line bottom" data-transition="55" data-display-at="7080">
-    <span class="fact">There was £65,918m in circulation in August 2013</span>
-    <span class="fact">There were 81.612 million mobile phone subscribers in the UK in 2012</span>
-    <span class="fact">The South East produced 1063.41706690468kg of waste per household in 2010/11</span>
-    <span class="fact">There was a 43% increase in Woodland bird species in the North West between 1994 and 2008</span>
-    <span class="fact">There were 441 fish farms in the UK in 2007</span>
-    </span>
-    <span class="fact">There were 33.23 million telephone lines in use in the UK in 2011</span>
-    <span class="fact">There are 28,603 km of gas pipelines in the UK in 2013
-    <span class="fact">In 2010, the UK exported about 4.481 billion kWh of electricity</span>
-  </div>
-</div>
-<div class="display right" data-transition="30" data-display-at="7170">
-  <span class="question">Who hates this data?</span>
-  <span class="question">Who hates this data?</span>
-</div>
-<!-- end = 7200 -->
+<!-- end = 7500 -->
 <!-- everyone: 3 mins = 180s -->
-<div class="display right" data-transition="30" data-display-at="7200"><img src="this-is-for-everyone-04.png" /></div>
-<!-- end = 7380 -->
+<div class="display up" data-transition="3" data-display-at="7500"><img src="this-is-for-everyone-04.png" /></div>
+<!-- end = 7680 -->
 <!-- knowledge for everyone: 7 mins = 420s -->
-<div class="display down" data-transition="5" data-display-at="7300"><img src="mountains-knowledge-for-everyone.png" /></div>
-<!-- end = 7800 -->
+<div class="display up" data-transition="6" data-display-at="7680"><img src="mountains-close-crop.png" /></div>
+<div class="display fade" data-transition="5" data-display-at="7800"><img src="mountains-knowledge-for-everyone.png" /></div>
+<!-- end = 8100 -->
+</div>
 </body>
 </html>

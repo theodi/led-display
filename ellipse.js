@@ -15,50 +15,72 @@ $(document).ready(function () {
     var 
       $this = $(this),
       $next = $this.next('.display').eq(0),
-      showAt = $this.attr('data-display-at') * 1000,
-      hideAt = $next.attr('data-display-at') * 1000,
-      effect = ($this.hasClass('up') || $this.hasClass('right') || $this.hasClass('down')) ? 'slide' : 'fade',
-      nextEffect = ($next.hasClass('up') || $next.hasClass('right') || $next.hasClass('down')) ? 'slide' : 'fade',
-      duration = ($this.attr('data-transition') || 0) * 1000,
-      nextDuration = $next.attr('data-transition') * 1000,
-      direction = $this.hasClass('up') ? 'down' : $this.hasClass('down') ? 'up' : 'right',
-      nextDirection = $next.hasClass('up') ? 'up' : $next.hasClass('down') ? 'down' : 'left',
-      easing = $this.hasClass('right') ? 'linear' : 'swing',
-      nextEasing = $next.hasClass('right') ? 'linear' : 'swing',
-      showOpts = {
-        effect: effect,
-        duration: duration,
-        direction: direction,
-        easing: easing
-      },
-      hideOpts = {
-        effect: nextEffect,
-        duration: nextDuration,
-        direction: nextDirection,
-        easing: nextEasing
-      };
-    if ($this.hasClass('multiline')) {
-      $this.show();
+      showAt = $this.attr('data-display-at') * 500,
+      hideAt = $next.attr('data-display-at') * 500,
+      duration = ($this.attr('data-transition') || 0) * 500,
+      nextDuration = $next.attr('data-transition') * 500,
+      easing = ($this.hasClass('right') || $this.hasClass('left')) ? 'linear' : 'swing',
+      nextEasing = ($next.hasClass('right') || $next.hasClass('left')) ? 'linear' : 'swing';
+    if ($this.hasClass('up') || $this.hasClass('down') || $this.hasClass('downup')) {
+      effect = 'slide';
+    } else if ($this.hasClass('right')) {
+      effect = 'slide';
+    } else if ($this.hasClass('left')) {
+      effect = 'blind';
     } else {
-      $this
-        .delay(showAt)
-        .show(showOpts);
-      if ($this.hasClass('line')) {
-        hideOpts = {
-            effect: 'slide',
-            duration: duration,
-            direction: 'left',
-            easing: 'linear'
-        };
-        // hideOpts.complete = marquee($this, showOpts, hideOpts, 10);
-        console.log('hiding');
-        console.log($this);
+      effect = 'fade';
+    }
+    if ($next.hasClass('up') || $next.hasClass('down') || $next.hasClass('downup')) {
+      nextEffect = 'slide';
+    } else if ($next.hasClass('right')) {
+      nextEffect = 'slide';
+    } else if ($next.hasClass('left')) {
+      nextEffect = 'blind';
+    } else {
+      nextEffect = 'fade';
+    }
+    if ($this.hasClass('up') || $this.hasClass('downup')) {
+      direction = 'down';
+    } else if ($this.hasClass('down')) {
+      direction = 'up';
+    } else if ($this.hasClass('left')) {
+      direction = 'left';
+    } else if ($this.hasClass('right')) {
+      direction = 'right';
+    }
+    if ($next.hasClass('up')) {
+      nextDirection = 'up';
+    } else if ($next.hasClass('down') || $next.hasClass('downup')) {
+      nextDirection = 'down';
+    } else if ($next.hasClass('left')) {
+      nextDirection = 'right';
+    } else {
+      nextDirection = 'left';
+    }
+    showOpts = {
+      effect: effect,
+      duration: duration,
+      direction: direction,
+      easing: easing
+    };
+    hideOpts = {
+      effect: nextEffect,
+      duration: nextDuration,
+      direction: nextDirection,
+      easing: nextEasing
+    };
+    $this
+      .delay(showAt)
+      .show(showOpts);
+    if ($next.length > 0) {
+      if ($next.hasClass('downup')) {
         $this
+          .delay(hideAt - showAt - duration - nextDuration)
           .hide(hideOpts);
-      } else if ($next.length > 0) {
+      } else if (nextEffect === 'slide' || nextEffect === 'blind') {
         $this
-          .delay(hideAt - showAt - duration)
-          .hide(hideOpts);
+          .delay(hideAt - showAt - duration + nextDuration)
+          .hide();
       }
     }
   });
