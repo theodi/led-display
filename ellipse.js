@@ -15,10 +15,10 @@ $(document).ready(function () {
     var 
       $this = $(this),
       $next = $this.next('.display').eq(0),
-      showAt = $this.attr('data-display-at') * 500,
-      hideAt = $next.attr('data-display-at') * 500,
-      duration = ($this.attr('data-transition') || 0) * 500,
-      nextDuration = $next.attr('data-transition') * 500,
+      showAt = $this.attr('data-display-at') * 1000,
+      hideAt = $next.attr('data-display-at') * 1000,
+      duration = ($this.attr('data-transition') || 0) * 1000,
+      nextDuration = $next.attr('data-transition') * 1000,
       easing = ($this.hasClass('right') || $this.hasClass('left')) ? 'linear' : 'swing',
       nextEasing = ($next.hasClass('right') || $next.hasClass('left')) ? 'linear' : 'swing';
     if ($this.hasClass('up') || $this.hasClass('down') || $this.hasClass('downup')) {
