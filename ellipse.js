@@ -78,9 +78,19 @@ $(document).ready(function () {
           .delay(hideAt - showAt - duration - nextDuration)
           .hide(hideOpts);
       } else if (nextEffect === 'slide' || nextEffect === 'blind') {
-        $this
-          .delay(hideAt - showAt - duration + nextDuration)
-          .hide();
+        if (nextDirection === 'right' || nextDirection === 'left') {
+          console.log('delaying hiding for ' + (hideAt - showAt - duration + nextDuration));
+          $this
+            .delay((hideAt - showAt - duration) + nextDuration)
+            .hide({
+              effect: 'fade',
+              duration: 0
+            });
+        } else {
+          $this
+            .delay(hideAt - showAt - duration)
+            .hide(hideOpts);
+        }
       }
     }
   });
